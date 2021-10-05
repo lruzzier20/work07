@@ -14,3 +14,9 @@ double avg(int* arr, int arrsize){
   }
   return total/arrsize;
 }
+
+void copy(int* first, int* second, int arrsize){
+  for(int k=0;k<arrsize;k++){
+    second[k]=first[k];
+  }
+}
