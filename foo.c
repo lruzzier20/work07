@@ -1,8 +1,16 @@
 #include <stdio.h>
-void printint(int* arr, int arrsize){
+void prntint(int* arr, int arrsize){
   printf("[ ");
   for(int i=0;i<arrsize;i++){
     printf("%d ",arr[i]);
   }
-  printf("]");
+  printf("]\n");
+}
+
+double avg(int* arr, int arrsize){
+  double total=0;
+  for(int j=0;j<arrsize;j++){
+    total+=arr[j];
+  }
+  return total/arrsize;
 }

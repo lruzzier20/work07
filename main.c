@@ -1,9 +1,12 @@
 #include <stdio.h>
-#define ARR_SIZE 3
+#define ARR_SIZE 10
 void main(){
+  void prntint(int* arr, int arrsize);
+  double avg(int* arr, int arrsize);
   int arr[ARR_SIZE];
   for(int i=0;i<ARR_SIZE;i++){
     arr[i]=i;
   }
-  printint(arr, ARR_SIZE);
+  prntint(arr, ARR_SIZE);
+  printf("avg=%lf\n",avg(arr, ARR_SIZE));
 }
